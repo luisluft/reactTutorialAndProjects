@@ -26,7 +26,12 @@ const Image = () => (
   <img src="https://images-na.ssl-images-amazon.com/images/I/81nzxODnaJL._AC_UL200_SR200,200_.jpg"></img>
 );
 
-const Author = () => <h4>Ann Whitford Paul</h4>;
+const Author = () => (
+  <h4 style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.25rem" }}>
+    Ann Whitford Paul
+  </h4>
+);
 
 const Title = () => <h1>If Animals Kissed Good Night</h1>;
+
 ReactDom.render(<BookList />, document.getElementById("root"));
