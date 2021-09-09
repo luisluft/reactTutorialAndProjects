@@ -1,19 +1,21 @@
 import React from "react";
 import ReactDom from "react-dom";
+import "./index.css";
 
 // Needs to be capitalized so that react can understand this is a react component
 // can only return a single element (wrap everything inside a React.Fragment)
 // use camelCase for html attributes (className)
 function BookList() {
   return (
-    <section>
+    <section className="booklist">
+      <Book />
       <Book />
     </section>
   );
 }
 
 const Book = () => (
-  <book>
+  <book className="book">
     <Image />
     <Title />
     <Author />
