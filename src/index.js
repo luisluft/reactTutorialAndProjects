@@ -36,14 +36,13 @@ function BookList() {
       {books.map((book) => {
         const { imageUrl, title, author } = book;
 
-        return <Book key={book.id} book={book}></Book>;
+        return <Book key={book.id} {...book}></Book>;
       })}{" "}
     </section>
   );
 }
 
-const Book = (props) => {
-  const { imageUrl, author, title } = props.book;
+const Book = ({ imageUrl, author, title }) => {
   return (
     <article className="book">
       <img alt="my face" src={imageUrl}></img>
